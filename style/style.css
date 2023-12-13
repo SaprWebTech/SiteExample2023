@@ -290,6 +290,71 @@ button:hover::before{
     margin-bottom: 80px;
 }
 
+/*******************************************ЭТО ДЛЯ ФОРМЫ*******************************************/
+
+#form-button::before{
+    content: "Отправить";
+}
+
+.form-style{
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.form-style h1{
+    font-size: 46px;
+}
+
+.text-field1,
+.text-field-sms{
+    background-color: black;
+	border-radius: 10px;
+	font-size: 28px;
+	font-family: DINProCM;
+	color: white;
+	width: 400px;
+	padding: 5px 15px;
+	border: 2px solid white;
+    resize: none;
+}
+
+/*******************************************ЭТО ДЛЯ СЛАЙДЕРА*******************************************/
+
+.c-slider .slick-track{
+	display: flex;
+}
+
+.c-slider .slick-list{
+	overflow: hidden;
+	margin: 0 -15px;
+}
+
+.f-s{
+    padding: 0 15px 0 15px;
+}
+
+.team-slider-arrows,
+.dev-slider-arrows{
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-top: 30px;
+}
+
+.team-slider-arrows img:hover,
+.dev-slider-arrows img:hover{
+	opacity: 0.5;
+}
+
+.team-slider-arrows img,
+.dev-slider-arrows img{
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	transition: all .3s;
+}
+
 /*******************************************ЭТО ДЛЯ ФУТЕРА*******************************************/
 
 footer > div > a > img{
@@ -313,7 +378,7 @@ footer p{
 
 /*******************************************ЭТО ДЛЯ АДАПТИВА*******************************************/
 
-@media(max-width: 1100px){
+@media(max-width: 1100px){ /*от 0 до 1100px*/
     .cards,
     .cards-2{
         gap: 20px;
@@ -351,6 +416,9 @@ footer p{
     .cards-2__right{
         width: 100%;
     }
+    .c-slider .slick-list {
+        margin: 0;
+    }
 }
 
 @media(max-width: 600px){
@@ -371,7 +439,11 @@ footer p{
     .main-content p{
         font-size: 22px;
     }
-    .m40 {
+    .m40{
         margin-bottom: 0;
+    }
+    .text-field1, 
+    .text-field-sms{
+        width: 100%;
     }
 }

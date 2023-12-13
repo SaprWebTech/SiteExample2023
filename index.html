@@ -7,6 +7,7 @@
     <title>Главная для 231</title>
 
     <link rel="stylesheet" href="style/style.css">
+    
 </head>
 <body>
     <div class="main-background flex-container">
@@ -20,8 +21,8 @@
                         <li>А где продать</li>
                     </ul>
                 </nav>
-                <div class="buter">
-
+                <div class="header__burger">
+                    <span></span>
                 </div>
                 <div class="right-block flex-container">
                     <a class="ring-pc" href="tel:+79996584478">8 999 658-44-78</a>
@@ -105,6 +106,107 @@
             <div class="poz-ramka poz-right-for-absolute"></div>
         </div>
     </section>
+    <section>
+        <div class="cards flex-container c-slider">
+            <div class="card f-s flex-container">
+                <img src="static/images/red.png" alt="">
+                <div class="card-content flex-container">
+                    <div class="card-text flex-container">
+                        <h2>Заголовок 1</h2>
+                    </div>
+                    <button class="c-2">Подробнее</button>
+                </div>    
+            </div>
+            <div class="card f-s flex-container">
+                <img src="static/images/car.jpg" alt="">
+                <div class="card-content flex-container">
+                    <div class="card-text flex-container">
+                        <h2>Заголовок 2</h2>
+                    </div>
+                    <button class="c-2">Подробнее</button>
+                </div>    
+            </div>
+            <div class="card f-s flex-container">
+                    <img src="static/images/10_3.jpg" alt="">
+                    <div class="card-content flex-container">
+                        <div class="card-text flex-container">
+                            <h2>Заголовок 3</h2>
+                        </div>    
+                    <button class="c-2">Подробнее</button>
+                </div>
+            </div>
+            <div class="card f-s flex-container">
+                <img src="static/images/dude2.png" alt="">
+                <div class="card-content flex-container">
+                    <div class="card-text flex-container">
+                        <h2>Заголовок 4</h2>
+                    </div>
+                    <button class="c-2">Подробнее</button>
+                </div>    
+            </div>
+            <div class="card f-s flex-container">
+                <img src="static/images/10_1.jpg" alt="">
+                <div class="card-content flex-container">
+                    <div class="card-text flex-container">
+                        <h2>Заголовок 5</h2>
+                    </div>
+                    <button class="c-2">Подробнее</button>
+                </div>    
+            </div>
+            <div class="card f-s flex-container">
+                    <img src="static/images/10_2.jpg" alt="">
+                    <div class="card-content flex-container">
+                        <div class="card-text flex-container">
+                            <h2>Заголовок 6</h2>
+                        </div>    
+                    <button class="c-2">Подробнее</button>
+                </div>
+            </div>
+            <div class="card f-s flex-container">
+                <img src="static/images/bg-hero.jpg" alt="">
+                <div class="card-content flex-container">
+                    <div class="card-text flex-container">
+                        <h2>Заголовок 7</h2>
+                    </div>
+                    <button class="c-2">Подробнее</button>
+                </div>    
+            </div>
+            <div class="card f-s flex-container">
+                <img src="static/images/10_2.jpg" alt="">
+                <div class="card-content flex-container">
+                    <div class="card-text flex-container">
+                        <h2>Заголовок 8</h2>
+                    </div>
+                    <button class="c-2">Подробнее</button>
+                </div>    
+            </div>
+            <div class="card f-s flex-container">
+                    <img src="static/images/dude2.png" alt="">
+                    <div class="card-content flex-container">
+                        <div class="card-text flex-container">
+                            <h2>Заголовок 9</h2>
+                        </div>    
+                    <button class="c-2">Подробнее</button>
+                </div>
+            </div>
+        </div>
+        <div class="dev-slider-arrows">
+            <img id="dev-arr-left" src="static/images/circle-arrow-left.svg" alt="">
+            <img id="dev-arr-right" src="static/images/circle-arrow-right.svg" alt="">
+        </div>
+    </section>
+    <section>
+        <form action="" method="POST" id="form-1">
+            <div class="flex-container form-style">
+                <h1>Связаться с нами</h1>
+                <input name="person-name" type="text" class="text-field1" placeholder="Имя" required>
+                <input name="person-mobile" type="text" class="text-field1" placeholder="Телефон" required>
+                <input name="person-email" type="text" class="text-field1" placeholder="Почта" required>
+                <textarea name="person-sms" rows="3" placeholder="Сообщение" type="text" size="40" class="text-field-sms" required></textarea>
+                <button id="form-button" type="submit">Отправить</button>
+            </div>    
+        </form>
+    </section>
     <footer class="flex-container">
         <div class="footers-a">
             <a href="">
@@ -123,5 +225,13 @@
             </a>
         </div>
     </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/libs/slick/slick.min.js"></script>
+
 </body>
 </html>
